@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handmade</title>
+    <link rel="stylesheet" href="/style/handmade.css">
+    <link rel="stylesheet" href="/style/variable.css">
+    
+    
+</head>
+<body>
+    <!-- Header -->
+    <!-- Body -->
+    <section class="handmade" id ="handmade">
+        <div class="handmade_container" id="handmade_container">
+            <h1>Handmade</h1>
+            <div class="handmade_product" id="handmade_product">
+                <div class="filters filters_handmade" id ="filters_handmade">
+                    <h2>Filter by</h2>
+                    <hr width ="30%">
+                    <div>
+                        <form>
+                            <p>Price</p>
+                            <input type="radio" id = "age1" name="age" value="30" onclick="">
+                            <label for="age1">0.00$ - 30.00$</label> <br>
+                            <input type="radio" id = "age2" name="age" value="100" onclick="">
+                            <label for="age2">30.00$ - 100.00$</label> <br>
+                            <input type="radio" id = "age3" name="age" value="150" onclick="">
+                            <label for="age3">100.00$ - 150.00$</label> <br>
+                            <input type="radio" id="age4" name = "age" value ="200" onclick="">
+                            <label for="age4">150.00$ - 200.00$</label> <br> <br>
+                        </form>
+
+                    </div>
+                    <hr width="30%">
+                </div>
+                <form>
+                    <label for="color">Color:</label>
+                    <select id="color_list" onchange="">
+                        <option value="white">White</option>
+                        <option value="blue">Blue</option>
+                        <option value="grey">Grey</option>
+                        <option value="brown">Brown</option>
+                    </select>
+                </form>
+            </div>
+            <br>
+            <br>
+            <div onclick="clear_filter()"> Clear filter</div>
+            <div class="product_list products_list-handmade" id ="products_list-handmade" ></div>
+
+        </div>
+    </section>
+    <script src="/assets/javascript/handmade.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</body>
+</html>
