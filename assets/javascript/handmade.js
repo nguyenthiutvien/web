@@ -1,11 +1,11 @@
 
-import axios from 'axios';
 const URL_handmade= 'https://63a5720d318b23efa793a600.mockapi.io/api/products';
 
 function getData2(){
     axios.get(`${URL_handmade}`)
     .then(
         function (res){
+            console.log(res.data)
             showHandmade(res)
         }
             )
